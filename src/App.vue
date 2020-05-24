@@ -2,7 +2,7 @@
   <!-- Contenido de la aplicación -->
   <div id="app">
     <header>
-      <h1>🍿MoVues</h1>
+      <h1>🍿 MoVues</h1>
     </header>
     <div class="main-content">
       <aside class="filters">
@@ -218,7 +218,7 @@
 // Import de nuestros componentes
 
 export default {
-  name: "MoVUEs",
+  name: "MoVues",
   // Nuestros componentes
   components: {},
 };
@@ -262,17 +262,6 @@ small {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-}
-
-/* Copy / paste: Kenan Yusuf : https://codepen.io/KenanYusuf/pen/PZKEKd */
-.control-group {
-  vertical-align: top;
-  background: #fff;
-  text-align: left;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 200px;
-  margin: 10px;
 }
 
 /* Copy / paste: Kenan Yusuf : https://codepen.io/KenanYusuf/pen/PZKEKd */

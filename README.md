@@ -1,4 +1,8 @@
-# movues
+# 🍿 MoVues
+
+Aplicación funcional en VueJS.
+
+![Captura demostración](./src/assets/captura-demostracion.png)
 
 ## Project setup
 ```
@@ -10,15 +14,12 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Créditos
+[Idea basada en VUE-POKEDEX by Rubén Valseca](https://github.com/rubnvp/vue-pokedex)
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Gracias a la ayuda de:
+* Rubén Valseca [@rubnvp](https://twitter.com/rubnvp)
+* Pepe García [@pepeloper_](https://twitter.com/pepeloper_)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Maravillosos los checkboxs by 
+[Kenan Yusuf](https://codepen.io/KenanYusuf/pen/PZKEKd)
