@@ -1,27 +1,29 @@
 [
-    {
+  {
+    "films": [
+      {
         "adult": false,
         "backdrop_path": "/xJWPZIYOEFIjZpBL7SVBGnzRYXp.jpg",
         "belongs_to_collection": {
-            "id": 386382,
-            "name": "Frozen - Colección",
-            "poster_path": "/zTlLWZxMXNfR2Ciy5JOMLUxp0K2.jpg",
-            "backdrop_path": "/6QonAoIN0jhWZZWZGJswSxHzUnU.jpg"
+          "id": 386382,
+          "name": "Frozen - Colección",
+          "poster_path": "/zTlLWZxMXNfR2Ciy5JOMLUxp0K2.jpg",
+          "backdrop_path": "/6QonAoIN0jhWZZWZGJswSxHzUnU.jpg"
         },
         "budget": 150000000,
         "genres": [
-            {
-                "id": 16,
-                "name": "Animación"
-            },
-            {
-                "id": 10751,
-                "name": "Familia"
-            },
-            {
-                "id": 12,
-                "name": "Aventura"
-            }
+          {
+            "id": 16,
+            "name": "Animación"
+          },
+          {
+            "id": 10751,
+            "name": "Familia"
+          },
+          {
+            "id": 12,
+            "name": "Aventura"
+          }
         ],
         "homepage": "https://movies.disney.com/frozen-2",
         "id": 330457,
@@ -32,33 +34,33 @@
         "popularity": 100.167,
         "poster_path": "/jnFCk7qGGWop2DgfnJXeKLZFuBq.jpg",
         "production_companies": [
-            {
-                "id": 6125,
-                "logo_path": "/tVPmo07IHhBs4HuilrcV0yujsZ9.png",
-                "name": "Walt Disney Animation Studios",
-                "origin_country": "US"
-            },
-            {
-                "id": 2,
-                "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
-                "name": "Walt Disney Pictures",
-                "origin_country": "US"
-            }
+          {
+            "id": 6125,
+            "logo_path": "/tVPmo07IHhBs4HuilrcV0yujsZ9.png",
+            "name": "Walt Disney Animation Studios",
+            "origin_country": "US"
+          },
+          {
+            "id": 2,
+            "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
+            "name": "Walt Disney Pictures",
+            "origin_country": "US"
+          }
         ],
         "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
         ],
         "release_date": "2019-11-20",
         "revenue": 1330764959,
         "runtime": 103,
         "spoken_languages": [
-            {
-                "iso_639_1": "en",
-                "name": "English"
-            }
+          {
+            "iso_639_1": "en",
+            "name": "English"
+          }
         ],
         "status": "Released",
         "tagline": "Sé fuerte. Enfréntate a tus miedos.",
@@ -66,25 +68,25 @@
         "video": false,
         "vote_average": 7.2,
         "vote_count": 4578
-    },
-    {
+      },
+      {
         "adult": false,
         "backdrop_path": "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
         "belongs_to_collection": null,
         "budget": 165000000,
         "genres": [
-            {
-                "id": 12,
-                "name": "Aventura"
-            },
-            {
-                "id": 18,
-                "name": "Drama"
-            },
-            {
-                "id": 878,
-                "name": "Ciencia ficción"
-            }
+          {
+            "id": 12,
+            "name": "Aventura"
+          },
+          {
+            "id": 18,
+            "name": "Drama"
+          },
+          {
+            "id": 878,
+            "name": "Ciencia ficción"
+          }
         ],
         "homepage": "https://www.warnerbros.co.uk/movies/interstellar",
         "id": 157336,
@@ -95,43 +97,43 @@
         "popularity": 63.353,
         "poster_path": "/d1QKiYtceF3GDtxvTFXFAqwwah9.jpg",
         "production_companies": [
-            {
-                "id": 923,
-                "logo_path": "/5UQsZrfbfG2dYJbx8DxfoTr2Bvu.png",
-                "name": "Legendary Entertainment",
-                "origin_country": "US"
-            },
-            {
-                "id": 9996,
-                "logo_path": "/3tvBqYsBhxWeHlu62SIJ1el93O7.png",
-                "name": "Syncopy",
-                "origin_country": "GB"
-            },
-            {
-                "id": 13769,
-                "logo_path": null,
-                "name": "Lynda Obst Productions",
-                "origin_country": ""
-            }
+          {
+            "id": 923,
+            "logo_path": "/5UQsZrfbfG2dYJbx8DxfoTr2Bvu.png",
+            "name": "Legendary Entertainment",
+            "origin_country": "US"
+          },
+          {
+            "id": 9996,
+            "logo_path": "/3tvBqYsBhxWeHlu62SIJ1el93O7.png",
+            "name": "Syncopy",
+            "origin_country": "GB"
+          },
+          {
+            "id": 13769,
+            "logo_path": null,
+            "name": "Lynda Obst Productions",
+            "origin_country": ""
+          }
         ],
         "production_countries": [
-            {
-                "iso_3166_1": "GB",
-                "name": "United Kingdom"
-            },
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
+          {
+            "iso_3166_1": "GB",
+            "name": "United Kingdom"
+          },
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
         ],
         "release_date": "2014-11-05",
         "revenue": 675120017,
         "runtime": 169,
         "spoken_languages": [
-            {
-                "iso_639_1": "en",
-                "name": "English"
-            }
+          {
+            "iso_639_1": "en",
+            "name": "English"
+          }
         ],
         "status": "Released",
         "tagline": "La humanidad nació en la Tierra. Nunca estuvo destinada a morir aquí.",
@@ -139,21 +141,21 @@
         "video": false,
         "vote_average": 8.3,
         "vote_count": 22429
-    },
-    {
+      },
+      {
         "adult": false,
         "backdrop_path": "/78PjwaykLY2QqhMfWRDvmfbC6EV.jpg",
         "belongs_to_collection": null,
         "budget": 23000000,
         "genres": [
-            {
-                "id": 18,
-                "name": "Drama"
-            },
-            {
-                "id": 35,
-                "name": "Comedia"
-            }
+          {
+            "id": 18,
+            "name": "Drama"
+          },
+          {
+            "id": 35,
+            "name": "Comedia"
+          }
         ],
         "homepage": "http://GreenBookFilm.com",
         "id": 490132,
@@ -164,37 +166,37 @@
         "popularity": 27.122,
         "poster_path": "/od2A7qPtpimcYfqfKXkpHqoKyuS.jpg",
         "production_companies": [
-            {
-                "id": 6735,
-                "logo_path": "/6yyByQrmTAgJv0QzZ1Eh1jiGX4R.png",
-                "name": "Participant Media",
-                "origin_country": "US"
-            },
-            {
-                "id": 33,
-                "logo_path": "/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
-                "name": "Universal Pictures",
-                "origin_country": "US"
-            }
+          {
+            "id": 6735,
+            "logo_path": "/6yyByQrmTAgJv0QzZ1Eh1jiGX4R.png",
+            "name": "Participant Media",
+            "origin_country": "US"
+          },
+          {
+            "id": 33,
+            "logo_path": "/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
+            "name": "Universal Pictures",
+            "origin_country": "US"
+          }
         ],
         "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
         ],
         "release_date": "2018-11-16",
         "revenue": 319700000,
         "runtime": 130,
         "spoken_languages": [
-            {
-                "iso_639_1": "en",
-                "name": "English"
-            },
-            {
-                "iso_639_1": "it",
-                "name": "Italiano"
-            }
+          {
+            "iso_639_1": "en",
+            "name": "English"
+          },
+          {
+            "iso_639_1": "it",
+            "name": "Italiano"
+          }
         ],
         "status": "Released",
         "tagline": "Inspirada por una amistad verdadera.",
@@ -202,30 +204,30 @@
         "video": false,
         "vote_average": 8.3,
         "vote_count": 6296
-    },
-    {
+      },
+      {
         "adult": false,
         "backdrop_path": "/orjiB3oUIsyz60hoEqkiGpy5CeO.jpg",
         "belongs_to_collection": {
-            "id": 86311,
-            "name": "Los Vengadores - Colección",
-            "poster_path": "/ui1wBgNNEy8H4S5gmlY1mWgfzbd.jpg",
-            "backdrop_path": "/zuW6fOiusv4X9nnW3paHGfXcSll.jpg"
+          "id": 86311,
+          "name": "Los Vengadores - Colección",
+          "poster_path": "/ui1wBgNNEy8H4S5gmlY1mWgfzbd.jpg",
+          "backdrop_path": "/zuW6fOiusv4X9nnW3paHGfXcSll.jpg"
         },
         "budget": 356000000,
         "genres": [
-            {
-                "id": 12,
-                "name": "Aventura"
-            },
-            {
-                "id": 878,
-                "name": "Ciencia ficción"
-            },
-            {
-                "id": 28,
-                "name": "Acción"
-            }
+          {
+            "id": 12,
+            "name": "Aventura"
+          },
+          {
+            "id": 878,
+            "name": "Ciencia ficción"
+          },
+          {
+            "id": 28,
+            "name": "Acción"
+          }
         ],
         "homepage": "https://www.marvel.com/movies/avengers-endgame",
         "id": 299534,
@@ -236,35 +238,35 @@
         "popularity": 44.48,
         "poster_path": "/br6krBFpaYmCSglLBWRuhui7tPc.jpg",
         "production_companies": [
-            {
-                "id": 420,
-                "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
-                "name": "Marvel Studios",
-                "origin_country": "US"
-            }
+          {
+            "id": 420,
+            "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+            "name": "Marvel Studios",
+            "origin_country": "US"
+          }
         ],
         "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
         ],
         "release_date": "2019-04-24",
         "revenue": 2797800564,
         "runtime": 181,
         "spoken_languages": [
-            {
-                "iso_639_1": "en",
-                "name": "English"
-            },
-            {
-                "iso_639_1": "ja",
-                "name": "日本語"
-            },
-            {
-                "iso_639_1": "xh",
-                "name": ""
-            }
+          {
+            "iso_639_1": "en",
+            "name": "English"
+          },
+          {
+            "iso_639_1": "ja",
+            "name": "日本語"
+          },
+          {
+            "iso_639_1": "xh",
+            "name": ""
+          }
         ],
         "status": "Released",
         "tagline": "Nada puede prepararte para el final.",
@@ -272,29 +274,29 @@
         "video": false,
         "vote_average": 8.3,
         "vote_count": 13257
-    },
-    {
+      },
+      {
         "adult": false,
         "backdrop_path": "/p2fRZzxla6NoRbIH2KOZq0gHb5S.jpg",
         "belongs_to_collection": null,
         "budget": 150000000,
         "genres": [
-            {
-                "id": 16,
-                "name": "Animación"
-            },
-            {
-                "id": 12,
-                "name": "Aventura"
-            },
-            {
-                "id": 10751,
-                "name": "Familia"
-            },
-            {
-                "id": 35,
-                "name": "Comedia"
-            }
+          {
+            "id": 16,
+            "name": "Animación"
+          },
+          {
+            "id": 12,
+            "name": "Aventura"
+          },
+          {
+            "id": 10751,
+            "name": "Familia"
+          },
+          {
+            "id": 35,
+            "name": "Comedia"
+          }
         ],
         "homepage": "http://movies.disney.com/zootopia",
         "id": 269149,
@@ -305,33 +307,33 @@
         "popularity": 46.497,
         "poster_path": "/i3WnZpJkQYXXbSGplEGmyoyeskM.jpg",
         "production_companies": [
-            {
-                "id": 6125,
-                "logo_path": "/tVPmo07IHhBs4HuilrcV0yujsZ9.png",
-                "name": "Walt Disney Animation Studios",
-                "origin_country": "US"
-            },
-            {
-                "id": 2,
-                "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
-                "name": "Walt Disney Pictures",
-                "origin_country": "US"
-            }
+          {
+            "id": 6125,
+            "logo_path": "/tVPmo07IHhBs4HuilrcV0yujsZ9.png",
+            "name": "Walt Disney Animation Studios",
+            "origin_country": "US"
+          },
+          {
+            "id": 2,
+            "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
+            "name": "Walt Disney Pictures",
+            "origin_country": "US"
+          }
         ],
         "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
         ],
         "release_date": "2016-02-11",
         "revenue": 1023784195,
         "runtime": 100,
         "spoken_languages": [
-            {
-                "iso_639_1": "en",
-                "name": "English"
-            }
+          {
+            "iso_639_1": "en",
+            "name": "English"
+          }
         ],
         "status": "Released",
         "tagline": "Bienvenidos a la jungla urbana.",
@@ -339,5 +341,7 @@
         "video": false,
         "vote_average": 7.7,
         "vote_count": 11674
-    }
+      }
+    ]
+  }
 ]
