@@ -8,7 +8,7 @@
         class="control control--checkbox"
       >
         {{ elem.name }}
-        <input type="checkbox" :value="elem.id"/>
+        <input type="checkbox" :value="elem.id" />
         <div class="control__indicator"></div>
       </label>
     </div>
