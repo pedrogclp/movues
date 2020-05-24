@@ -2,45 +2,13 @@
   <div class="filter">
     <div class="control-group">
       <h2>Filtro por género</h2>
-
-      <label class="control control--checkbox"
-        >Acción
-        <input type="checkbox" />
-        <div class="control__indicator"></div>
-      </label>
-
-      <label class="control control--checkbox"
-        >Animación
-        <input type="checkbox" />
-        <div class="control__indicator"></div>
-      </label>
-
-      <label class="control control--checkbox"
-        >Aventura
-        <input type="checkbox" />
-        <div class="control__indicator"></div>
-      </label>
-
-      <label class="control control--checkbox"
-        >Ciencia ficción
-        <input type="checkbox" />
-        <div class="control__indicator"></div>
-      </label>
-
-      <label class="control control--checkbox"
-        >Comedia
-        <input type="checkbox" />
-        <div class="control__indicator"></div>
-      </label>
-
-      <label class="control control--checkbox"
-        >Drama
-        <input type="checkbox" />
-        <div class="control__indicator"></div>
-      </label>
-      <label class="control control--checkbox"
-        >Familia
-        <input type="checkbox" />
+      <label
+        v-for="(elem, index) in genres"
+        :key="index"
+        class="control control--checkbox"
+      >
+        {{ elem.name }}
+        <input type="checkbox" :value="elem.id"/>
         <div class="control__indicator"></div>
       </label>
     </div>
@@ -50,6 +18,40 @@
 <script>
 export default {
   name: "Aside",
+  data: () => {
+    return {
+      genres: [
+        {
+          id: 16,
+          name: "Animación",
+        },
+        {
+          id: 10751,
+          name: "Familia",
+        },
+        {
+          id: 12,
+          name: "Aventura",
+        },
+        {
+          id: 18,
+          name: "Drama",
+        },
+        {
+          id: 878,
+          name: "Ciencia ficción",
+        },
+        {
+          id: 35,
+          name: "Comedia",
+        },
+        {
+          id: 28,
+          name: "Acción",
+        },
+      ],
+    };
+  },
 };
 </script>
 
