@@ -1,15 +1,19 @@
 # 🍿 MoVues
 
-Aplicación funcional en VueJS.
+👋Hola! 
+
+He creado una aplicación funcional preparada para hacer paso a paso con VueJS y aprender un poquito sobre este lenguaje.
+
+[💚 Notion para seguir los pasos uno a uno.](https://www.notion.so/MoVUEs-b9db3428053d42c2b310ed36c15f6504)
 
 ![Captura demostración](./src/assets/captura-demostracion.png)
 
-## Project setup
+## Instalación del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compila y lanza en local para desarrollo
 ```
 npm run serve
 ```
