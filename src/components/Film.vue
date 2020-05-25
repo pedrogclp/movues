@@ -7,7 +7,7 @@
       />
     </div>
     <div class="data">
-      <h2>{{ title }}</h2>
+      <h2>{{ film.title }}</h2>
       <h4>
         {{ film.tagline }}
       </h4>

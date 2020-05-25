@@ -1,7 +1,7 @@
 <template>
   <div class="filter">
     <div class="control-group">
-      <h2>Filtro por género</h2>
+      <h2>{{ title }}</h2>
       <label
         v-for="(elem, index) in genres"
         :key="index"
@@ -16,41 +16,34 @@
 </template>
 
 <script>
+// import dataJson from "../data/data.json";
+
 export default {
   name: "Aside",
-  data: () => {
+  data() {
     return {
-      genres: [
-        {
-          id: 16,
-          name: "Animación",
-        },
-        {
-          id: 10751,
-          name: "Familia",
-        },
-        {
-          id: 12,
-          name: "Aventura",
-        },
-        {
-          id: 18,
-          name: "Drama",
-        },
-        {
-          id: 878,
-          name: "Ciencia ficción",
-        },
-        {
-          id: 35,
-          name: "Comedia",
-        },
-        {
-          id: 28,
-          name: "Acción",
-        },
-      ],
+      title: "Filtro por género",
+      genres: [],
     };
+  },
+  methods: {
+    getUniqueGenresFromFilms: (films) => {
+      var y = [];
+      films.map((film) => film.genres.map((genre) => y.push(genre)));
+      return [...new Set(y.map((genre) => JSON.stringify(genre)))].map((z) =>
+        JSON.parse(z)
+      );
+    },
+  },
+  created() {
+    var that = this;
+    fetch("/data.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((_data) => {
+        that.$data.genres = that.getUniqueGenresFromFilms(_data.films);
+      });
   },
 };
 </script>

@@ -1,34 +1,32 @@
-[
-  {
-    "genres": [
-      {
-        "id": 16,
-        "name": "Animación"
-      },
-      {
-        "id": 10751,
-        "name": "Familia"
-      },
-      {
-        "id": 12,
-        "name": "Aventura"
-      },
-      {
-        "id": 18,
-        "name": "Drama"
-      },
-      {
-        "id": 878,
-        "name": "Ciencia ficción"
-      },
-      {
-        "id": 35,
-        "name": "Comedia"
-      },
-      {
-        "id": 28,
-        "name": "Acción"
-      }
-    ]
-  }
-]
+{
+  "genres": [
+    {
+      "id": 16,
+      "name": "Animación"
+    },
+    {
+      "id": 10751,
+      "name": "Familia"
+    },
+    {
+      "id": 12,
+      "name": "Aventura"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 878,
+      "name": "Ciencia ficción"
+    },
+    {
+      "id": 35,
+      "name": "Comedia"
+    },
+    {
+      "id": 28,
+      "name": "Acción"
+    }
+  ]
+}
