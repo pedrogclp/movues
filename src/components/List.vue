@@ -11,13 +11,25 @@
 
 <script>
 import Film from "./Film";
-import dataJson from "../data/data.json";
 
 export default {
   name: "List",
   components: { Film },
   data: () => {
-    return Object.assign({ title: "Listado" }, dataJson);
+    return {
+      title: "Listado",
+      films: [],
+    };
+  },
+  created() {
+    var that = this;
+    fetch("/data.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((_data) => {
+        that.$data.films = _data.films;
+      });
   },
 };
 </script>

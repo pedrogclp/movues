@@ -16,8 +16,6 @@
 </template>
 
 <script>
-// import dataJson from "../data/data.json";
-
 export default {
   name: "Aside",
   data() {
