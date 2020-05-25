@@ -11,7 +11,7 @@
         <input
           type="checkbox"
           :value="elem.id"
-          :checked="filteredGenres.indexOf(elem.id) > -1"
+          :checked="filterByGenres.indexOf(elem.id) > -1"
           @click="addOrDeleteGenre(elem)"
         />
         <div class="control__indicator"></div>
@@ -27,25 +27,29 @@ export default {
     return {
       title: "Filtro por género",
       genres: [],
-      filteredGenres: [],
+      filterByGenres: [],
     };
   },
   methods: {
     addOrDeleteGenre(genre) {
-      var index = this.$data.filteredGenres.indexOf(genre.id);
+      var index = this.filterByGenres.indexOf(genre.id);
       if (index === -1) {
-        this.$data.filteredGenres.push(genre.id);
+        this.filterByGenres.push(genre.id);
       } else {
-        this.$data.filteredGenres.splice(index, 1);
+        this.filterByGenres.splice(index, 1);
       }
+      this.emitUpdateFilter();
     },
-    getUniqueGenresFromFilms: (films) => {
+    getUniqueGenresFromFilms(films) {
       var y = [];
       films.map((film) => film.genres.map((genre) => y.push(genre)));
       return [...new Set(y.map((genre) => JSON.stringify(genre)))].map((z) =>
         JSON.parse(z)
       );
     },
+    emitUpdateFilter() {
+      this.$emit('updateFilter', this.filterByGenres);
+    }
   },
   created() {
     var that = this;
@@ -55,9 +59,10 @@ export default {
       })
       .then((_data) => {
         that.$data.genres = that.getUniqueGenresFromFilms(_data.films);
-        that.$data.filteredGenres = that
+        that.$data.filterByGenres = that
           .getUniqueGenresFromFilms(_data.films)
           .map((genre) => genre.id);
+        this.emitUpdateFilter();
       });
   },
 };

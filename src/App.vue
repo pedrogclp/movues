@@ -5,23 +5,33 @@
       <h1>🍿 MoVues</h1>
     </header>
     <div class="main-content">
-      <Aside/>
-      <List/>
+      <Aside v-on:updateFilter="updateGenres($event)" />
+      <List :filterByGenres="filterByGenres"/>
     </div>
   </div>
 </template>
 
 <script>
 // Import de nuestros componentes
-import Aside from './components/Aside.vue';
-import List from './components/List.vue';
+import Aside from "./components/Aside.vue";
+import List from "./components/List.vue";
 
 export default {
-  name: 'MoVues',
+  name: "MoVues",
+  data() {
+    return {
+      filterByGenres: [],
+    };
+  },
   // Nuestros componentes
   components: {
     Aside,
-    List
+    List,
+  },
+  methods: {
+    updateGenres (event) {
+      this.filterByGenres = event;
+    },
   },
 };
 </script>

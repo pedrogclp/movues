@@ -2,7 +2,7 @@
   <div class="list">
     <h3>{{ title }}</h3>
     <ul>
-      <li v-for="(elem, index) in films" :key="index">
+      <li v-for="(elem, index) in filterFilms(films)" :key="index">
         <Film :film="elem" />
       </li>
     </ul>
@@ -15,6 +15,9 @@ import Film from "./Film";
 export default {
   name: "List",
   components: { Film },
+  props: {
+    filterByGenres: {},
+  },
   data: () => {
     return {
       title: "Listado",
@@ -28,8 +31,21 @@ export default {
         return response.json();
       })
       .then((_data) => {
-        that.$data.films = _data.films;
+        that.$data.films = that.filterFilms(_data.films);
       });
+  },
+  methods: {
+    filterFilms(films) {
+      var that = this;
+      return films.filter(function(film) {
+        for (const genre of film.genres) {
+          if (that.$props.filterByGenres.indexOf(genre.id) > -1) {
+            return true;
+          }
+        }
+        return false;
+      })
+    },
   },
 };
 </script>
