@@ -8,7 +8,12 @@
         class="control control--checkbox"
       >
         {{ elem.name }}
-        <input type="checkbox" :value="elem.id" />
+        <input
+          type="checkbox"
+          :value="elem.id"
+          :checked="filteredGenres.indexOf(elem.id) > -1"
+          @click="addOrDeleteGenre(elem)"
+        />
         <div class="control__indicator"></div>
       </label>
     </div>
@@ -22,9 +27,18 @@ export default {
     return {
       title: "Filtro por género",
       genres: [],
+      filteredGenres: [],
     };
   },
   methods: {
+    addOrDeleteGenre(genre) {
+      var index = this.$data.filteredGenres.indexOf(genre.id);
+      if (index === -1) {
+        this.$data.filteredGenres.push(genre.id);
+      } else {
+        this.$data.filteredGenres.splice(index, 1);
+      }
+    },
     getUniqueGenresFromFilms: (films) => {
       var y = [];
       films.map((film) => film.genres.map((genre) => y.push(genre)));
@@ -41,6 +55,9 @@ export default {
       })
       .then((_data) => {
         that.$data.genres = that.getUniqueGenresFromFilms(_data.films);
+        that.$data.filteredGenres = that
+          .getUniqueGenresFromFilms(_data.films)
+          .map((genre) => genre.id);
       });
   },
 };
