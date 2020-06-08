@@ -2,7 +2,7 @@
   <div class="list">
     <h3>{{ title }}</h3>
     <ul>
-      <li v-for="(elem, index) in films" :key="index">
+      <li v-for="(elem, index) in filterFilms(films)" :key="index">
         <Film :film="elem" />
       </li>
     </ul>
@@ -13,6 +13,9 @@ import Film from "./Film.vue";
 
 export default {
   name: "List",
+  props: {
+    filterByGenres: {},
+  },
   data() {
     return {
       title: "Listado",
@@ -371,7 +374,19 @@ export default {
   components: {
     Film
   },
-  methods: {},
+  methods: {
+    filterFilms(films) {
+      var that = this;
+      return films.filter(function(film) {
+        for (const genre of film.genres) {
+          if (that.$props.filterByGenres.indexOf(genre.id) > -1) {
+            return true;
+          }
+        }
+        return false;
+      })
+    },
+  },
   computed: {},
   created() {
     var that = this;
@@ -380,7 +395,7 @@ export default {
         return response.json();
       })
       .then((_data) => {
-        that.$data.films = _data.films;
+        that.$data.films = that.filterFilms(_data.films);
       });
   }
 };
