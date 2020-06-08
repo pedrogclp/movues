@@ -372,7 +372,17 @@ export default {
     Film
   },
   methods: {},
-  computed: {}
+  computed: {},
+  created() {
+    var that = this;
+    fetch("/data.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((_data) => {
+        that.$data.films = _data.films;
+      });
+  }
 };
 </script>
 <style scoped>

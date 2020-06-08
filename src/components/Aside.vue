@@ -48,7 +48,7 @@ export default {
         return response.json();
       })
       .then((_data) => {
-        that.$data.genres = _data.films[0].genres //that.getUniqueGenresFromFilms(_data.films);
+        that.$data.genres = that.getUniqueGenresFromFilms(_data.films);
       });
   }
 };
