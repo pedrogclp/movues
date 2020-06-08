@@ -5,8 +5,8 @@
       <h1>🍿 MoVues</h1>
     </header>
     <div class="main-content">
-      <Aside/>
-      <List/>
+      <Aside v-on:updateFilter="updateGenres($event)" />
+      <List :filterByGenres="filterByGenres"/>
     </div>
   </div>
 </template>
@@ -18,11 +18,21 @@ import List from "./components/List.vue";
 
 export default {
   name: "MoVues",
+  data() {
+    return {
+      filterByGenres: [],
+    };
+  },
   // Nuestros componentes
   components: {
     Aside,
     List,
   },
+  methods: {
+    updateGenres (event) {
+      this.filterByGenres = event;
+    },
+  }
 };
 </script>
 

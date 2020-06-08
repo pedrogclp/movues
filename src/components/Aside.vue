@@ -49,7 +49,11 @@ export default {
       } else {
         this.filterByGenres.splice(index, 1);
       }
+      this.emitUpdateFilter();
     },
+    emitUpdateFilter() {
+      this.$emit('updateFilter', this.filterByGenres);
+    }
   },
   computed: {},
   created() {
@@ -65,6 +69,7 @@ export default {
           .getUniqueGenresFromFilms(_data.films)
           // Array de ids
           .map((genre) => genre.id);
+        this.emitUpdateFilter();
       });
   }
 };
