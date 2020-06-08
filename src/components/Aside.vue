@@ -1,7 +1,7 @@
 <template>
   <aside class="filters">
     <div class="control-group">
-      <h2>Filtro por género</h2>
+      <h2>{{ title }}</h2>
 
       <label class="control control--checkbox">
         Acción
@@ -49,6 +49,11 @@
 <script>
 export default {
   name: "Aside",
+  data() {
+      return {
+          title: "Filtro por género"
+    };
+  },
   // Nuestros componentes
   components: {},
   methods: {},

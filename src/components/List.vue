@@ -1,5 +1,6 @@
 <template>
   <div class="list">
+    <h3>{{ title }}</h3>
     <ul>
       <li>
         <div class="film">
@@ -156,6 +157,11 @@
 <script>
 export default {
   name: "List",
+  data() {
+    return {
+      title: "Listado"
+    };
+  },
   // Nuestros componentes
   components: {},
   methods: {},
