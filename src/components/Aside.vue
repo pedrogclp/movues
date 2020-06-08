@@ -60,7 +60,7 @@ export default {
   computed: {}
 };
 </script>
-<style>
+<style scoped>
 /* Filtros de búsqueda */
 .filters {
   flex: 1 1 auto;
